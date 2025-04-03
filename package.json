@@ -1,7 +1,7 @@
 {
-  "name": "first-node-p",
+  "name": "First Node Mini Project",
   "version": "1.0.0",
-  "description": "My first ever node test project",
+  "description": "Solving different task and exercises. Exercise one file server.js and exercise two app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-server": "node exerciseone-server.mjs",
