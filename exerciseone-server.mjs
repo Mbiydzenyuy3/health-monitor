@@ -11,11 +11,11 @@ const overloadListener =
 
 myEvent.on("system", overloadListener);
 setInterval(() => {
-  if (system > 80) {
+  // const usage = Math.floor(Math.random() * 100) + 1;
+
+  if (system > 70) {
     const date = new Date();
-    myEvent.emit(`overload: ${dateTime.toLocalString()}`);
+    myEvent.emit(`overload: ${dateTime.toLocalString()}`, usage);
   }
   console.log("system is normal");
-}, 1000);
-
-process.stdin.resume();
+}, 300);

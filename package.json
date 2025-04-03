@@ -1,12 +1,11 @@
 {
   "name": "first-node-p",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "My first ever node test project",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-server": "exerciseone-server.mjs",
-    "devapp": "exercisetwo-app.mjs"
+    "start-server": "node exerciseone-server.mjs",
+    "dev-app": "node exercisetwo-app.mjs"
   },
   "keywords": [],
   "author": "",
