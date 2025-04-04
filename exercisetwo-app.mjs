@@ -33,10 +33,10 @@ const configFiles = [
   "config.local.json",
 ];
 
-class ReferenceError extends Error {
+class CharError extends Error {
   constructor(message) {
     super(message);
-    this.name = "ReferenceError";
+    this.name = "CharError";
   }
 }
 
@@ -53,7 +53,7 @@ async function loadConfig(files, index = 0, configData = {}) {
     console.log(`Loaded ${files[index]}`);
   } catch (err) {
     // handling errors properly with Custom Errors here
-    throw new ReferenceError(`file not found ${files[index]}:`, err.message);
+    throw new CharError(`file not found ${files[index]}:`, err.message);
     //  error should occur if the file in question is not found and move to the next
   }
 
